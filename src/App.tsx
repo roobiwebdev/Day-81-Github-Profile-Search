@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import SearchInput from './components/SearchInput'
 import UserInfo from './components/UserInfo'
 import RepositoryCard from './components/RepositoryCard'
+import Spinner from './components/Spinner'
 
 export default function App() {
   const [userInfo, setUserInfo] = useState<InfoUserFiltered | null>(null);
@@ -122,7 +123,7 @@ export default function App() {
         {userInfo ? (
           <UserInfo userInfo={userInfo} />
         ) : (
-          <p>Loading user info...</p>
+          <Spinner />
         )}
         <div className='repository-list'>
           {userRepository ? (
@@ -130,7 +131,7 @@ export default function App() {
               userRepository={userRepository}
               renderAllRepositories={renderAllRepositories} />
           ) : (
-            <p>Loading user repositories...</p>
+            <Spinner />
           )}
         </div>
         {isAllRepositories === false ? (
