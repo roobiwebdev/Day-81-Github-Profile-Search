@@ -1,0 +1,11 @@
+@import './styles/reset.css';
+
+:root {
+  font-family: Be Vietnam Pro;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  background-color: #20293A;
+}

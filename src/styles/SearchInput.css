@@ -1,0 +1,33 @@
+.search-input {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  border-radius: 12px;
+  padding: 15px 50px;
+
+  color: #cdd5e0;
+  background: 14px / 26px no-repeat #20293a url(/Search.svg);
+  border: none;
+}
+
+.search-input::placeholder {
+  color: #4a5567;
+}
+
+.search-input:focus {
+  outline: 1px #4a5567 solid;
+}
+
+@media (max-width: 1000px) {
+  .search-input {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    width: 90%;
+  }
+}

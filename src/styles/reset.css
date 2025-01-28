@@ -1,0 +1,54 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+}
+
+:where(ul, ol):where([class]) {
+	padding-left: 0;
+}
+
+body,
+:where(blockquote, figure):where([class]) {
+	margin: 0;
+}
+
+body {
+	min-height: 100%;
+	line-height: 1.5;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
